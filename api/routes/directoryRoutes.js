@@ -7,6 +7,9 @@ module.exports = function (app) {
     .get(resourceList.listResource)
     .post(resourceList.createResource);
 
+  app.route('/')
+    .get(resourceList.test)
+  
   // app.route('/tasks/:taskId')
   //   .get(todoList.read_a_task)
   //   .put(todoList.update_a_task)
