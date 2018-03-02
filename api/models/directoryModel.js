@@ -8,7 +8,7 @@ var DirectorySchema = new Schema({
     required: 'Enter business name',
     unique: true
   },
-  Created_date: {
+  createdDate: {
     type: Date,
     default: Date.now
   },
