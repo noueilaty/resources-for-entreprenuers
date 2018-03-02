@@ -12,6 +12,15 @@ var DirectorySchema = new Schema({
     type: Date,
     default: Date.now
   },
+  url: {
+    type: String,
+    required: 'Enter business URL',
+    unique: true
+  },
+  description: {
+    type: String,
+    required: 'Enter business description'
+  }, 
   phone: {
     type: String
   },
