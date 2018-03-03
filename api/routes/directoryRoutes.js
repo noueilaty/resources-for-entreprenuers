@@ -15,6 +15,9 @@ module.exports = function (app) {
 
   app.route('/admin')
     .get(resourceList.displayAdmin)
+
+  app.route('/resources/:_id')
+    .delete(resourceList.deleteResource)
   
   // app.route('/tasks/:taskId')
   //   .get(todoList.read_a_task)

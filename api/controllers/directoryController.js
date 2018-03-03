@@ -48,3 +48,13 @@ exports.displayAdmin = function (req, res) {
     res.render('../views/admin', { resources: resources })
   });
 };
+
+exports.deleteResource = function (req, res) {
+  Directory.findByIdAndRemove(req.params.id, (err, resource) => {
+    console.log(req.params.id)
+    if (err) {
+      return res.json({ 'success': false, 'message': 'Error' });
+    }
+    return res.json({ 'success': true, 'message': 'Deleted successfully' });
+  });
+};
