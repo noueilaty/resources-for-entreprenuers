@@ -32,3 +32,19 @@ exports.readResource = function(req, res) {
 exports.test = function(req, res) {
   res.render('../views/index')
 };
+
+exports.displayResources = function (req, res) {
+  Directory.find({}, function (err, resources) {
+    if (err)
+      res.send(err);
+    res.render('../views/index', { resources: resources })
+  });
+};
+
+exports.displayAdmin = function (req, res) {
+  Directory.find({}, function (err, resources) {
+    if (err)
+      res.send(err);
+    res.render('../views/admin', { resources: resources })
+  });
+};

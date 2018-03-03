@@ -5,7 +5,7 @@ const express = require('express'),
   Directory = require('./api/models/directoryModel'), //created model loading here
   bodyParser = require('body-parser'),
   mustacheExpress = require('mustache-express');
-  bluebird = require('bluebird');
+  promise = require('bluebird');
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/Directory');

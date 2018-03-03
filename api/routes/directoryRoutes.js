@@ -3,12 +3,18 @@
 module.exports = function (app) {
   var resourceList = require('../controllers/directoryController');
 
-  app.route('/resources')
+  app.route('/api/resources')
     .get(resourceList.listResource)
     .post(resourceList.createResource);
 
   app.route('/')
     .get(resourceList.test)
+
+  app.route('/directory')
+    .get(resourceList.displayResources)
+
+  app.route('/admin')
+    .get(resourceList.displayAdmin)
   
   // app.route('/tasks/:taskId')
   //   .get(todoList.read_a_task)
