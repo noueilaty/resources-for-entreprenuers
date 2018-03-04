@@ -12,6 +12,7 @@ function deleteResource(id){
        'Content-Type':'application/json'
      })
      }).then((response) =>{
+       location.reload()
       console.log("hey whats up")
    });
 
