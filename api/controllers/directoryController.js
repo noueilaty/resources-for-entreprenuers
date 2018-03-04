@@ -51,7 +51,7 @@ exports.displayAdmin = function (req, res) {
 
 exports.deleteResource = function (req, res) {
   Directory.findByIdAndRemove(req.params.id, (err, resource) => {
-    console.log(req.params.id)
+    //console.log(req.params.id)
     if (err) {
       return res.json({ 'success': false, 'message': 'Error' });
     }

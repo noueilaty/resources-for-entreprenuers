@@ -4,8 +4,9 @@ const express = require('express'),
   mongoose = require('mongoose'),
   Directory = require('./api/models/directoryModel'), //created model loading here
   bodyParser = require('body-parser'),
-  mustacheExpress = require('mustache-express');
-  promise = require('bluebird');
+  mustacheExpress = require('mustache-express'),
+  promise = require('bluebird'),
+  path = require('path')
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/Directory');
@@ -14,6 +15,8 @@ app.engine('mustache', mustacheExpress());
 
 app.set('views', './views');
 app.set('view engine', 'mustache');
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
