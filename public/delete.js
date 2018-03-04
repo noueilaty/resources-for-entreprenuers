@@ -1,5 +1,4 @@
 'use strict';
-//document.getElementById('delete_button').addEventListener('click', deleteResource)
 
 
 function deleteResource(id){
@@ -13,7 +12,6 @@ function deleteResource(id){
      })
      }).then((response) =>{
        location.reload()
-      console.log("hey whats up")
    });
 
 }
