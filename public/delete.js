@@ -15,3 +15,18 @@ function deleteResource(id){
    });
 
 }
+
+function approveResource(id) {
+
+  console.log(id)
+
+  fetch("http://localhost:3000/resources/" + id, {
+    method: 'PUT',
+    headers: new Headers({
+      'Content-Type': 'application/json'
+    })
+  }).then((response) => {
+    location.reload()
+  });
+
+}

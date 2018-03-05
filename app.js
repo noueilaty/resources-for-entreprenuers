@@ -6,8 +6,9 @@ const express = require('express'),
   bodyParser = require('body-parser'),
   mustacheExpress = require('mustache-express'),
   promise = require('bluebird'),
-  path = require('path')
-
+  path = require('path'),
+  methodOverride = require('method-override')
+  
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/Directory');
 

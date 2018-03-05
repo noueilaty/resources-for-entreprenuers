@@ -18,6 +18,7 @@ module.exports = function (app) {
 
   app.route('/resources/:id')
     .delete(resourceList.deleteResource)
+    .put(resourceList.approveResource)
 
   // app.route('/tasks/:taskId')
   //   .get(todoList.read_a_task)

@@ -7,6 +7,7 @@ exports.listResource = function(req, res) {
   Directory.find({}, function (err, resource) {
     if (err)
       res.send(err);
+      console.log(resource)
     res.json(resource);
   });
 };
@@ -14,9 +15,20 @@ exports.listResource = function(req, res) {
 exports.createResource = function(req, res) {
   var newResource = new Directory(req.body);
   newResource.save(function (err, resource) {
+    ({
+      businessName: req.body.businessName,
+      url: req.body.url,
+      description: req.body.description,
+      contactName: req.body.contactName,
+      email: req.body.email,
+      phone: req.body.phone,
+      address: req.body.address,
+      services: req.body.services,
+      market: req.body.market
+    });
     if (err)
       res.send(err);
-    res.json(resource);
+    res.redirect('/directory');
   });
 };
 
@@ -50,8 +62,20 @@ exports.displayAdmin = function (req, res) {
 };
 
 exports.deleteResource = function (req, res) {
+
   Directory.findByIdAndRemove(req.params.id, (err, resource) => {
+    
     //console.log(req.params.id)
+    if (err) {
+      return res.json({ 'success': false, 'message': 'Error' });
+    }
+    return res.json({ 'success': true, 'message': 'Deleted successfully' });
+  });
+};
+
+exports.approveResource = function (req, res) {
+
+  Directory.findByIdAndUpdate(req.params.id, { isApproved: true }, (err, resource) => {
     if (err) {
       return res.json({ 'success': false, 'message': 'Error' });
     }

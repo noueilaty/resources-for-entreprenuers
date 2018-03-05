@@ -1,6 +1,25 @@
 <html>
   <head></head>
   <body>
+    <form method="post" action="/api/resources">
+      <h5>Business Information</h5>
+      <input name='businessName' type='text' placeholder='Business Name'></input><br>
+      <input name='url' type='text' placeholder='URL'></input><br>
+      <input name='description' type='text' placeholder='Description'></input><br>
+      <br>
+      <h5>Contact Information</h5>
+      <input name='contactName' type='text' placeholder='Contact Name'></input><br>
+      <input name='email' type='text' placeholder='Email Address'></input><br>
+      <input name='phone' type='text' placeholder='Phone'></input><br>
+      <input name='address' type='text' placeholder='Address'></input><br>
+      <br>
+      <h5>Market</h5>
+      <input name='services' type='text' placeholder='Services (Separate with commas)'></input><br>
+      <input name='market' type='text' placeholder='Market (Separate with commas)'></input><br>
+      <br>
+      <button type='submit'>Submit Form</button>
+    </form>
+    
     <h2>Resources for Entreprenuers in Houston</h2>
     <ul>
       {{#resources}}
