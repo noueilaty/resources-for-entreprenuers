@@ -19,21 +19,23 @@
       <br>
       <button type='submit'>Submit Form</button>
     </form>
-    
+
     <h2>Resources for Entreprenuers in Houston</h2>
     <ul>
       {{#resources}}
-        <li>
-          {{businessName}}
-          <br>
-          {{url}}
-          <br>
-          {{description}}
-          <br>
-          {{phone}}
-          <br>
-          {{email}}
-        </li>
+        {{#isApproved}}
+            <li>
+              {{businessName}}
+              <br>
+              {{url}}
+              <br>
+              {{description}}
+              <br>
+              {{phone}}
+              <br>
+              {{email}}
+            </li>
+        {{/isApproved}}
       {{/resources}}
     </ul>
   </body>

@@ -7,7 +7,6 @@ exports.listResource = function(req, res) {
   Directory.find({}, function (err, resource) {
     if (err)
       res.send(err);
-      console.log(resource)
     res.json(resource);
   });
 };
