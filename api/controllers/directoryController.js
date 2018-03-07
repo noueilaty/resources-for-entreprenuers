@@ -32,7 +32,6 @@ exports.createResource = function(req, res) {
 };
 
 exports.readResource = function(req, res) {
-  // Come back to resourceId:
   Directory.findById(req.params.resourceId, function (err, resource) {
     if (err)
       res.send(err);
@@ -48,6 +47,11 @@ exports.displayResources = function (req, res) {
   Directory.find({}, function (err, resources) {
     if (err)
       res.send(err);
+
+    // let filtereredResources = new Object() 
+    // filtereredResources.approvedResources = resources.filter(r => r.isApproved == true )
+    // filtereredResources.nonapprovedREs = resources.filter
+
     res.render('../views/index', { resources: resources })
   });
 };
@@ -61,10 +65,7 @@ exports.displayAdmin = function (req, res) {
 };
 
 exports.deleteResource = function (req, res) {
-
   Directory.findByIdAndRemove(req.params.id, (err, resource) => {
-
-    //console.log(req.params.id)
     if (err) {
       return res.json({ 'success': false, 'message': 'Error' });
     }
@@ -73,11 +74,19 @@ exports.deleteResource = function (req, res) {
 };
 
 exports.approveResource = function (req, res) {
-
   Directory.findByIdAndUpdate(req.params.id, { isApproved: true }, (err, resource) => {
     if (err) {
       return res.json({ 'success': false, 'message': 'Error' });
     }
-    return res.json({ 'success': true, 'message': 'Deleted successfully' });
+    return res.json({ 'success': true, 'message': 'Approved successfully' });
+  });
+};
+
+exports.disapproveResource = function (req, res) {
+  Directory.findByIdAndUpdate(req.params.id, { isApproved: false }, (err, resource) => {
+    if (err) {
+      return res.json({ 'success': false, 'message': 'Error' });
+    }
+    return res.json({ 'success': true, 'message': 'Disapproved resource' });
   });
 };
