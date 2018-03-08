@@ -2,26 +2,47 @@
   <head>
     <title>Resources for Entreprenuers in Houston | RFEIH</title>
     <meta></meta>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
-    <form method="post" action="/api/resources">
-      <h5>Business Information</h5>
-        <input name='businessName' type='text' placeholder='Business Name'></input><br>
-        <input name='url' type='text' placeholder='URL'></input><br>
-        <input name='description' type='text' placeholder='Description'></input><br>
-        <br>
-      <h5>Contact Information</h5>
-        <input name='contactName' type='text' placeholder='Contact Name'></input><br>
-        <input name='email' type='text' placeholder='Email Address'></input><br>
-        <input name='phone' type='text' placeholder='Phone'></input><br>
-        <input name='address' type='text' placeholder='Address'></input><br>
-        <br>
-      <h5>Market</h5>
-        <input name='services' type='text' placeholder='Services (Separate with commas)'></input><br>
-        <input name='market' type='text' placeholder='Market (Separate with commas)'></input><br>
-        <br>
-        <button type='submit'>Submit Form</button>
-    </form>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 test">
+        <h3>Hello</h3>
+        <div class="row">
+          <div class="col-md-6 test2"></div>
+          <div class="col-md-6"></div>
+        </div>
+        
+        </div>
+      </div>    
+    </header>
+    
+    
+    
+    
+    
+    <div class='hiding-form'>
+      <form method="post" action="/api/resources">
+        <h5>Business Information</h5>
+          <input name='businessName' type='text' placeholder='Business Name'></input><br>
+          <input name='url' type='text' placeholder='URL'></input><br>
+          <input name='description' type='text' placeholder='Description'></input><br>
+          <br>
+        <h5>Contact Information</h5>
+          <input name='contactName' type='text' placeholder='Contact Name'></input><br>
+          <input name='email' type='text' placeholder='Email Address'></input><br>
+          <input name='phone' type='text' placeholder='Phone'></input><br>
+          <input name='address' type='text' placeholder='Address'></input><br>
+          <br>
+        <h5>Market</h5>
+          <input name='services' type='text' placeholder='Services (Separate with commas)'></input><br>
+          <input name='market' type='text' placeholder='Market (Separate with commas)'></input><br>
+          <br>
+          <button type='submit'>Submit Form</button>
+      </form>
+    </div>
     <h2>Resources for Entreprenuers in Houston</h2>
       <ul>
         {{#resources}}

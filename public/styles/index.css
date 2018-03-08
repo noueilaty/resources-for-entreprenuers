@@ -1,0 +1,13 @@
+.hiding-form {
+  display: none;
+}
+
+.test {
+  background-color: bisque;
+  height: 30px;
+}
+
+.test2 {
+    background-color: red;
+    height: 30px;
+}
