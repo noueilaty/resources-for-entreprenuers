@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 body {
   font-family: 'Merriweather Sans', sans-serif;
 }
+=======
+/* Colors:
+#F0BCD5
+#3A0D43
+*/
+>>>>>>> 807798c899f1b73bc2e111eea1539ee8addbd133
 
 .hiding-form {
   display: none;
@@ -8,11 +15,11 @@ body {
 
 .left-column {
     background-color: #00C9B1;
-    height: 75vh;
+    /* height: 75vh; */
 }
 
 .header-container{
-  height:75vh;
+  /* height:75vh; */
 }
 
 .nav_menu{
