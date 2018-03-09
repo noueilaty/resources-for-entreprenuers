@@ -48,6 +48,7 @@ body {
 .resource-list{
   list-style: none;
   margin-left: 30px;
+  margin-top: 40px;
 }
 
 .actual-resource-item {
