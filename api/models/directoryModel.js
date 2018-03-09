@@ -20,7 +20,7 @@ var DirectorySchema = new Schema({
   description: {
     type: String,
     required: 'Enter business description'
-  }, 
+  },
   phone: {
     type: String
   },

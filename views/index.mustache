@@ -6,23 +6,30 @@
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
-    <header class="container-fluid">
+    <header class="container-fluid header_container">
       <div class="row">
         <div class="col-md-12 test">
-        <h3>Hello</h3>
         <div class="row">
-          <div class="col-md-6 test2"></div>
-          <div class="col-md-6"></div>
+          <div class="col-md-6 left_column"></div>
+          <div class="col-md-6 right_column">
+            <div class="navigation d-flex justify-content-around">
+              <ul class="nav_menu">
+                <li class="li_item">Home </li>
+                <li class="li_item">Events </li>
+                <li class="li_item">Calendar </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        
+
         </div>
-      </div>    
+      </div>
     </header>
-    
-    
-    
-    
-    
+
+
+
+
+
     <div class='hiding-form'>
       <form method="post" action="/api/resources">
         <h5>Business Information</h5>
@@ -43,6 +50,9 @@
           <button type='submit'>Submit Form</button>
       </form>
     </div>
+
+    <section class="container-fluid resource_div">
+    <div class="row">
     <h2>Resources for Entreprenuers in Houston</h2>
       <ul>
         {{#resources}}
@@ -61,5 +71,8 @@
           {{/isApproved}}
         {{/resources}}
       </ul>
+    </div>
+    </section>
+    </div>
   </body>
 </html>

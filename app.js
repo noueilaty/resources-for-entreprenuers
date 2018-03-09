@@ -8,7 +8,7 @@ const express = require('express'),
   promise = require('bluebird'),
   path = require('path'),
   methodOverride = require('method-override')
-  
+
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/Directory');
 

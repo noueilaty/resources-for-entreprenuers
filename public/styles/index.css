@@ -3,11 +3,38 @@
 }
 
 .test {
-  background-color: bisque;
+
   height: 30px;
 }
 
-.test2 {
-    background-color: red;
-    height: 30px;
+.left_column {
+    background-color: #9F2859;
+    height: 75vh;
+}
+
+.header_container{
+  height:75vh;
+  background-color: #F0BCD5;
+}
+
+.nav_menu{
+  display:inline-flex;
+  list-style: none;
+  color:white;
+  font-size: 20px;
+}
+
+.navigation {
+  background-color: #3A0D43;
+  width:100%;
+}
+
+.li_item{
+  margin:10px;
+  text-transform: uppercase;
+}
+
+.resource_div {
+  background-color: #3A0D43;
+  color:white;
 }
