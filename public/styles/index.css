@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 body {
   font-family: 'Merriweather Sans', sans-serif;
 }
-=======
-/* Colors:
-#F0BCD5
-#3A0D43
-*/
->>>>>>> 8abedc1ac8535ece0e74ba506d06a3b4f3678516
 
 .hiding-form {
   display: none;
@@ -49,8 +42,19 @@ body {
 .resource-list{
   list-style: none;
   margin-left: 30px;
-  margin-top: 40px;
+  margin-top: 0;
 }
 
 .actual-resource-item {
+}
+
+.form_submit{
+  transform: rotate(90deg);
+	transform-origin: left top 0;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+.the-list{
+
 }
