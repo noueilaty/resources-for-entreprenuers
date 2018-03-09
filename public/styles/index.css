@@ -1,3 +1,7 @@
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
 .hiding-form {
   display: none;
 }
@@ -35,6 +39,16 @@
 }
 
 .resource_div {
-  background-color: #3A0D43;
-  color:white;
+  background-color: #FEA2AC;
+  color: black;
+  font-size: 60px;
+  padding:80px;
+}
+
+.resource-list{
+  list-style: none;
+  margin-left: 30px;
+}
+
+.actual-resource-item {
 }
