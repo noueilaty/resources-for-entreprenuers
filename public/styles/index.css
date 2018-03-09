@@ -1,7 +1,6 @@
-/* Colors:
-#F0BCD5
-#3A0D43
-*/
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
 
 .hiding-form {
   display: none;
