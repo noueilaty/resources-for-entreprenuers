@@ -1,24 +1,25 @@
+<<<<<<< HEAD
 body {
   font-family: 'Merriweather Sans', sans-serif;
 }
+=======
+/* Colors:
+#F0BCD5
+#3A0D43
+*/
+>>>>>>> 8abedc1ac8535ece0e74ba506d06a3b4f3678516
 
 .hiding-form {
   display: none;
 }
 
-.test {
-
-  height: 30px;
-}
-
-.left_column {
-    background-color: #9F2859;
+.left-column {
+    background-color: #00C9B1;
     height: 75vh;
 }
 
-.header_container{
+.header-container{
   height:75vh;
-  background-color: #F0BCD5;
 }
 
 .nav_menu{
@@ -33,9 +34,9 @@ body {
   width:100%;
 }
 
-.li_item{
+.li-item{
   margin:10px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .resource_div {
