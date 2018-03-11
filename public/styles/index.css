@@ -1,16 +1,37 @@
-<<<<<<< HEAD
 body {
   font-family: 'Merriweather Sans', sans-serif;
 }
-=======
-/* Colors:
-#F0BCD5
-#3A0D43
-*/
->>>>>>> 807798c899f1b73bc2e111eea1539ee8addbd133
 
 .hiding-form {
-  display: none;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #00043C;
+  opacity: .9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  text-align: center;
+  color:white;
+}
+
+.hiding-form a {
+  text-decoration: none;
+}
+
+.hiding-form a:hover {
+  color: #00C9B1; }
+
+.btn-close{
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:white;
 }
 
 .left-column {
