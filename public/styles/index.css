@@ -65,12 +65,21 @@ body {
   color: black;
   font-size: 60px;
   padding:80px;
+  display:flex;
 }
 
 .resource-list{
   list-style: none;
-  margin-left: 30px;
-  margin-top: 0;
+  margin-top: -20px;
+  margin-left:-190px;
+  padding-left: 0;
+}
+
+.resource-list li:hover {
+  color: #FFF; }
+
+.the-list{
+  margin:0;
 }
 
 .actual-resource-item {
@@ -80,8 +89,12 @@ body {
   transform: rotate(90deg);
 	transform-origin: left top 0;
   margin-bottom: 0;
+  margin-left: 25px;
   font-size: 30px;
 }
+
+.form_submit p:hover {
+  color: #FFF; }
 
 .the-list{
 

@@ -48,7 +48,7 @@ exports.displayResources = function (req, res) {
     if (err)
       res.send(err);
 
-    // let filtereredResources = new Object() 
+    // let filtereredResources = new Object()
     // filtereredResources.approvedResources = resources.filter(r => r.isApproved == true )
     // filtereredResources.nonapprovedREs = resources.filter
 
