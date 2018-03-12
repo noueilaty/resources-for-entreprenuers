@@ -82,7 +82,7 @@ body {
   
 }
 
-.form_submit{
+.form-submit{
   transform: rotate(90deg);
 	transform-origin: left top 0;
   margin-bottom: 0;
@@ -90,9 +90,43 @@ body {
   font-size: 30px;
 }
 
-.form_submit p:hover {
+.form-submit p:hover {
   color: #FFF; }
 
 .the-list{
 
+}
+
+.admin-body{
+  margin:0;
+  background-color: #00C9B1;
+}
+
+.admin-list{
+  list-style: none;
+}
+
+.title-admin{
+ margin: 20px 0 0 30px;
+}
+
+.list-container{
+  margin-top: 40px;
+}
+
+.admin-button{
+  background-color: #3A0D43;
+  color:#FFF;
+  border-style: none;
+}
+
+.login-body{
+  background-color:#FEA2AC;
+  color:white;
+  padding:15px;
+}
+
+.login-form{
+  border-style: solid;
+  padding:10px;
 }

@@ -1,29 +1,35 @@
 <html>
   <head>
     <script src="delete.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   </head>
-  <body>
-    <h2>Resources for Entreprenuers in Houston (Admin Page)</h2>
-    <ul>
+  <body class="admin-body">
+    <h2 class="title-admin">Resources for Entreprenuers in Houston (Admin Page)</h2>
+
+    <ul class="admin-list">
       {{#resources}}
+      <div class="list-container">
         <li>
-          {{businessName}}
+          <strong>Business Name:</strong> {{businessName}}
           <br>
-          {{url}}
+          <strong>Business Url:</strong> {{url}}
           <br>
-          {{description}}
+          <strong>Business Description:</strong> {{description}}
           <br>
-          {{phone}}
+          <strong>Business Phone:</strong> {{phone}}
           <br>
-          {{email}}
+          <strong>Contact Email:</strong> {{email}}
           <br>
-          Is Approved: {{isApproved}}
-          <br>
-          <button onclick=approveResource('{{_id}}')>Approve</button>
-          <button>Update</button>
-          <button onclick="deleteResource('{{_id}}')" unique_id={{_id}}>Delete</button>
+          <strong>Is Approved:</strong> {{isApproved}}
+          <br><br>
+          <button class="admin-button" onclick=approveResource('{{_id}}')>Approve</button>
+          <button class="admin-button">Update</button>
+          <button class="admin-button" onclick="deleteResource('{{_id}}')" unique_id={{_id}}>Delete</button>
           <br>
         </li>
+      </div>
         <br>
       {{/resources}}
     </ul>
