@@ -39,10 +39,6 @@ body {
     /* height: 75vh; */
 }
 
-.header-container {
-  /* height:75vh; */
-}
-
 .nav_menu {
   display:inline-flex;
   list-style: none;

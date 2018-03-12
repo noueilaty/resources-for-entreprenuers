@@ -30,6 +30,7 @@
     "mongoose": "^5.0.7",
     "mustache-express": "^1.2.5",
     "nodemon": "^1.17.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "typed.js": "^2.0.6"
   }
 }
