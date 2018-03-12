@@ -3,7 +3,35 @@ body {
 }
 
 .hiding-form {
-  display: none;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #00043C;
+  opacity: .9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  text-align: center;
+  color:white;
+}
+
+.hiding-form a {
+  text-decoration: none;
+}
+
+.hiding-form a:hover {
+  color: #00C9B1; }
+
+.btn-close{
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:white;
 }
 
 .left-column {
@@ -36,15 +64,39 @@ body {
   background-color: #FEA2AC;
   color: black;
   font-size: 60px;
-  padding:80px;
+  padding:100px;
+  display:flex;
 }
 
 .resource-list {
   list-style: none;
-  margin-left: 30px;
-  margin-top: 40px;
+  margin-top: -20px;
+  margin-left:-190px;
+  padding-left: 0;
+}
+
+.resource-list li:hover {
+  color: #FFF; }
+
+.the-list{
+  margin:0;
 }
 
 .actual-resource-item {
   
+}
+
+.form_submit{
+  transform: rotate(90deg);
+	transform-origin: left top 0;
+  margin-bottom: 0;
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+.form_submit p:hover {
+  color: #FFF; }
+
+.the-list{
+
 }

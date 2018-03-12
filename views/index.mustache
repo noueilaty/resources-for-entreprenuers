@@ -37,7 +37,8 @@
 
 
 
-    <div class='hiding-form'>
+    <div class='hiding-form text-align' id="hide-form">
+      <a href="#" onclick="closeForm()" class="btn-close"> &times;</a>
       <form method="post" action="/api/resources">
         <h5>Business Information</h5>
           <input name='businessName' type='text' placeholder='Business Name'></input><br>
@@ -61,6 +62,10 @@
     <section class="container-fluid">
     <div class="row">
       <div class="col-md-12 resource_div">
+      <div class="form_submit">
+          <p onclick="openForm()">Submit Resource </p>
+      </div>
+      <div class="the-list">
       <ul class="resource-list">
         {{#resources}}
           {{#isApproved}}
@@ -73,7 +78,9 @@
       </ul>
     </div>
     </div>
+    </div>
     </section>
     </div>
   </body>
+  <script src="submitForm.js" type="text/javascript"></script>
 </html>
