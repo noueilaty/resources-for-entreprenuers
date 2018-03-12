@@ -16,6 +16,10 @@ module.exports = function (app) {
   app.route('/admin')
     .get(resourceList.displayAdmin)
 
+  app.route('/login')
+    .get(resourceList.loginPage)
+    .post(resourceList.actualLogin)
+
   app.route('/resources/:id')
     .delete(resourceList.deleteResource)
     .put(resourceList.approveResource)

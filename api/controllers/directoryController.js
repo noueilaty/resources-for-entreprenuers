@@ -90,3 +90,18 @@ exports.disapproveResource = function (req, res) {
     return res.json({ 'success': true, 'message': 'Disapproved resource' });
   });
 };
+
+exports.loginPage = function(req, res) {
+  res.render('../views/login')
+};
+
+exports.actualLogin = function(req, res) {
+  let username = req.body.username
+  let password = req.body.password
+  console.log(username,password)
+  if (username=="admin" && password=="admin"){
+      res.redirect('/admin');
+  } else {
+    res.redirect('/login');
+  }
+};
