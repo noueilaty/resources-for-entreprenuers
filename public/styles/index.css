@@ -22,6 +22,11 @@ body {
   text-decoration: none;
 }
 
+.header-left {
+  padding: 200px 0;
+  text-align: center;
+}
+
 .hiding-form a:hover {
   color: #00C9B1; }
 
