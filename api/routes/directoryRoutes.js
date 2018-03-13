@@ -24,6 +24,12 @@ module.exports = function (app) {
     .delete(resourceList.deleteResource)
     .put(resourceList.approveResource)
 
+  app.route('/logged')
+    .get(resourceList.isLogged)
+
+  app.route('/logout')
+    .get(resourceList.logOut)
+
   // app.route('/tasks/:taskId')
   //   .get(todoList.read_a_task)
   //   .put(todoList.update_a_task)

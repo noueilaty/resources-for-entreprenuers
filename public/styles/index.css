@@ -164,6 +164,42 @@ body {
 }
 
 .subscribe-section{
-  padding: 200px 0;
-  text-align: center;
+  padding: 100px 0;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.subscribe-section input[type=text] {
+  width: 160px;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #FEA2AC;
+  background-color: #00043C;
+}
+
+.subscribe-section input[type=email] {
+  width: 200px;
+  padding: 5px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #FEA2AC;
+  background-color: #00043C;
+}
+
+.subscribe-button {
+  background-color: #00C8B1;
+  border: none;
+  padding:15px;
+}
+
+.logout-button{
+  margin:30px 0 0 30px;
+}
+
+.logout-button a {
+  text-decoration: none;
+  color:white;
 }

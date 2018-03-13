@@ -7,7 +7,8 @@ const express = require('express'),
   mustacheExpress = require('mustache-express'),
   promise = require('bluebird'),
   path = require('path'),
-  methodOverride = require('method-override')
+  methodOverride = require('method-override'),
+  session = require("express-session");
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/Directory');
@@ -18,6 +19,14 @@ app.set('views', './views');
 app.set('view engine', 'mustache');
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(
+  session({
+    secret: "cute dogs",
+    resave: false,
+    saveUninitialized: true
+  })
+);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

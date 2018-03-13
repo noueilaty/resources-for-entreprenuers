@@ -57,11 +57,15 @@ exports.displayResources = function (req, res) {
 };
 
 exports.displayAdmin = function (req, res) {
+  if (req.session.name){
   Directory.find({}, function (err, resources) {
     if (err)
       res.send(err);
     res.render('../views/admin', { resources: resources })
   });
+} else {
+  res.redirect('/login');
+}
 };
 
 exports.deleteResource = function (req, res) {
@@ -98,10 +102,31 @@ exports.loginPage = function(req, res) {
 exports.actualLogin = function(req, res) {
   let username = req.body.username
   let password = req.body.password
-  console.log(username,password)
   if (username=="admin" && password=="admin"){
+      req.session.name = req.body.username;
+      req.session.authenticated = true;
       res.redirect('/admin');
   } else {
-    res.redirect('/login');
+      res.redirect('/login');
   }
 };
+
+exports.isLogged = function(req,res){
+  if (req.session.name) {
+    res.write("<h1>User Logged In</h1><a href='/logout'>Logout</a>");
+    res.end();
+  } else {
+    res.write("<h1>User not logged in</h1><a href='/directory'>Go to Directory</a>");
+    res.end();
+  }
+};
+
+exports.logOut = function(req,res){
+  req.session.destroy(function(err) {
+    if (err) {
+      res.negotiate(err);
+    }
+    console.log("user is logged out");
+    res.redirect("/directory");
+  });
+}
