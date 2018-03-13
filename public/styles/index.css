@@ -132,11 +132,11 @@ body {
 }
 
 .participants-logos{
-  background-color: #00043C;
+  background-color: #00C8B1;
   height:300px;
 }
 .participants-logos h2 {
-  color:#FEA2AC;
+  color:#000;
 }
 
 .part-logo-img{
@@ -154,10 +154,11 @@ body {
 
 .footer {
   background-color: #00043C;
-  height:500px;
+  height:600px;
+  color:white;
 }
 
-.map-calendar{
-  background-color: #00C8B1;
-  height:500px;
+.subscribe-section{
+  padding: 200px 0;
+  text-align: center;
 }
