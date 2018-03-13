@@ -79,7 +79,7 @@ body {
 }
 
 .actual-resource-item {
-  
+
 }
 
 .form-submit{
@@ -129,4 +129,30 @@ body {
 .login-form{
   border-style: solid;
   padding:10px;
+}
+
+.participants-logos{
+  background-color: #00043C;
+  height:300px;
+}
+.participants-logos h2 {
+  color:#FEA2AC;
+}
+
+.part-logo-img{
+  height:75px;
+}
+
+.logo-list{
+  display:inline-flex;
+  list-style:none;
+}
+
+.logo-container{
+  padding:50px;
+}
+
+.footer {
+  background-color: #00043C;
+  height:500px;
 }
