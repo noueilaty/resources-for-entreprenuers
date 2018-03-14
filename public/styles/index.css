@@ -25,6 +25,8 @@ body {
 .header-left {
   padding: 200px 0;
   text-align: center;
+  color: #FFF;
+  font-size: 45px;
 }
 
 .hiding-form a:hover {

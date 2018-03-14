@@ -15,9 +15,10 @@
             <div class="col-md-12">
                <div class="row">
                   <div class="col-md-6 left-column header-left">
-                     <h3>The premier Resource hub for the</h3>
-                     <h3 id="typeit"></h3>
-                     <h3>in HTX.</h3>
+                     <p><strong>CreateHTX</strong></p>
+                     <p>The premier resource hub for the</p>
+                     <p id="typeit"></p>
+                     <p>in HTX.</p>
                   </div>
                   <div class="col-md-6 p-0 background-img-0">
                      <div class="navigation d-flex justify-content-around">
@@ -159,7 +160,7 @@
    <script>
       new TypeIt('#typeit', {
         strings: 'entreprenuers',
-        speed: 50,
+        speed: 70,
         autoStart: false,
         loop: true
       })
@@ -168,7 +169,10 @@
       .type('creatives')
       .pause(1000)
       .delete()
+      .type('hustlers')
       .pause(1000)
-      .type('hustlers');
+      .delete()
+      .type('startups')
+      .pause(1000);
    </script>
 </html>
