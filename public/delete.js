@@ -21,3 +21,18 @@ function approveResource(id) {
     location.reload()
   });
 }
+
+function displayInfo(id){
+  fetch("http://localhost:3000/resources/" + id,{
+    method: 'GET',
+    headers: new Headers({
+      'Content-Type': 'application/json'
+    })
+  })
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(myJson.businessName);
+  });
+}

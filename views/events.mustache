@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <script src="delete.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  </head>
+  <body class="events-body">
+    <nav class="container-fluid events-header">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <p class="events-header-title">EVENTS</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<div class="container-fluid google-maps">
+  <div class="row">
+    <div class="col-md-8 offset-2">
+      <img src="./images/calendar-fake.png" class="img-fluid">
+    </div>
+  </div>
+</div>
+<div class="container-fluid google-maps">
+  <div class="row">
+    <div class="col-md-8 offset-2">
+      <div id="googleMap" style="width:400px;height:400px">
+    </div>
+  </div>
+</div>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-6">
+            <div class="subscribe-section">
+            <p><h2>Subscribe to get the latest news</h2></p><br>
+            <label>Name</label>
+            <input type="text"><br>
+            <label>Email</label>
+            <input type="email"><br><br>
+            <p><button class="subscribe-button"> Susbcribe </button></p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script>
+
+    function myMap() {
+      var myCenter = new google.maps.LatLng(29.752711, -95.3397064);
+      var mapCanvas = document.getElementById("googleMap");
+      var mapOptions = {center: myCenter, zoom: 15};
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({position:myCenter});
+      marker.setMap(map);
+
+      var infowindow = new google.maps.InfoWindow({
+        content: `3302 Canal St, Houston, TX 77003`
+      });
+      infowindow.open(map,marker);
+    }
+    </script>
+
+  </body>
+
+
+
+  </html>

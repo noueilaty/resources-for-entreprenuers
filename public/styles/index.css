@@ -203,3 +203,24 @@ body {
   text-decoration: none;
   color:white;
 }
+
+.events-header {
+  background-color: #00043C;
+  height:60vh;
+}
+
+.events-header-title{
+  color:#fff;
+  text-align: center;
+  font-size: 80px;
+  margin:auto;
+  margin-top: 150px;
+}
+
+.events-body{
+  background-color: #00C8B1;
+}
+
+.google-maps{
+  height:700px;
+}

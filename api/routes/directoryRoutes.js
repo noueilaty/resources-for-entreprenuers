@@ -23,6 +23,7 @@ module.exports = function (app) {
   app.route('/resources/:id')
     .delete(resourceList.deleteResource)
     .put(resourceList.approveResource)
+    .get(resourceList.viewItem)
 
   app.route('/logged')
     .get(resourceList.isLogged)
@@ -30,8 +31,6 @@ module.exports = function (app) {
   app.route('/logout')
     .get(resourceList.logOut)
 
-  // app.route('/tasks/:taskId')
-  //   .get(todoList.read_a_task)
-  //   .put(todoList.update_a_task)
-  //   .delete(todoList.delete_a_task);
+  app.route('/events')
+    .get(resourceList.events)
 };

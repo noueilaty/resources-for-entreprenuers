@@ -130,3 +130,13 @@ exports.logOut = function(req,res){
     res.redirect("/directory");
   });
 }
+
+exports.viewItem = function(req,res){
+  Directory.findById(req.params.id, function (err, adventure) {
+    res.json(adventure);
+  });
+}
+
+exports.events = function(req, res) {
+  res.render('../views/events')
+};
