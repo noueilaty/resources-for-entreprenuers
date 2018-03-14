@@ -1,166 +1,174 @@
 <html>
-  <head>
-    <title>Resources for Entreprenuers in Houston | RFEIH</title>
-    <meta></meta>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-    <script src="delete.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.2.0/typeit.min.js"></script>
-  </head>
-  <body>
-    <header class="container-fluid header-container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-6 left-column header-left">
-              <h3>The premier Resource hub for the</h3>
-              <h3 id="typeit"></h3>
-              <h3>in HTX.</h3>
-
+   <head>
+      <title>Resources for Entreprenuers in Houston | RFEIH</title>
+      <meta>
+      </meta>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles/index.css">
+      <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+      <script src="delete.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.2.0/typeit.min.js"></script>
+   </head>
+   <body>
+      <header class="container-fluid header-container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="row">
+                  <div class="col-md-6 left-column header-left">
+                     <h3>The premier Resource hub for the</h3>
+                     <h3 id="typeit"></h3>
+                     <h3>in HTX.</h3>
+                  </div>
+                  <div class="col-md-6 p-0">
+                     <div class="navigation d-flex justify-content-around">
+                        <ul class="nav_menu">
+                           <li class="li-item">home</li>
+                           <li class="li-item">resources</li>
+                           <li class="li-item">events</li>
+                        </ul>
+                     </div>
+                     <img src="./images/hustle-mug.jpg" alt="hustle-mug" class="img-fluid">
+                  </div>
+               </div>
             </div>
-            <div class="col-md-6 p-0">
-              <div class="navigation d-flex justify-content-around">
-                <ul class="nav_menu">
-                  <li class="li-item">home</li>
-                  <li class="li-item">resources</li>
-                  <li class="li-item">events</li>
-                </ul>
-              </div>
-              <img src="./images/hustle-mug.jpg" alt="hustle-mug" class="img-fluid">
+         </div>
+      </header>
+      <section>
+         <div class="container-fluid">
+            <div class="row p-0">
+               <div class="col-md-6 p-0">
+                  <img src="./images/beanie-working.jpg" alt="hustle-mug" class="img-fluid">
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row p-0">
+               <div class="col-md-6 p-0">
+                  <img src="./images/working-kanban.jpg" alt="hustle-mug" class="img-fluid">
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row p-0">
+               <div class="col-md-6 p-0">
+                  <img src="./images/working-window.jpg" alt="hustle-mug" class="img-fluid">
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class='hiding-form text-align' id="hide-form">
+         <a href="#" onclick="closeForm()" class="btn-close"> &times;</a>
+         <form method="post" action="/api/resources">
+            <h5>Business Information</h5>
+            <input name='businessName' type='text' placeholder='Business Name'></input><br>
+            <input name='url' type='text' placeholder='URL'></input><br>
+            <input name='description' type='text' placeholder='Description'></input><br>
+            <br>
+            <h5>Contact Information</h5>
+            <input name='contactName' type='text' placeholder='Contact Name'></input><br>
+            <input name='email' type='text' placeholder='Email Address'></input><br>
+            <input name='phone' type='text' placeholder='Phone'></input><br>
+            <input name='address' type='text' placeholder='Address'></input><br>
+            <br>
+            <h5>Market</h5>
+            <input name='services' type='text' placeholder='Services (Separate with commas)'></input><br>
+            <input name='market' type='text' placeholder='Market (Separate with commas)'></input><br>
+            <br>
+            <button type='submit'>Submit Form</button>
+         </form>
       </div>
-    </header>
-    <section>
-      <div class="container-fluid">
-        <div class="row p-0">
-          <div class="col-md-6 p-0">
-
-            <img src="./images/beanie-working.jpg" alt="hustle-mug" class="img-fluid">
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row p-0">
-          <div class="col-md-6 p-0">
-            <img src="./images/working-kanban.jpg" alt="hustle-mug" class="img-fluid">
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row p-0">
-          <div class="col-md-6 p-0">
-            <img src="./images/working-window.jpg" alt="hustle-mug" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <div class='hiding-form text-align' id="hide-form">
-      <a href="#" onclick="closeForm()" class="btn-close"> &times;</a>
-      <form method="post" action="/api/resources">
-        <h5>Business Information</h5>
-          <input name='businessName' type='text' placeholder='Business Name'></input><br>
-          <input name='url' type='text' placeholder='URL'></input><br>
-          <input name='description' type='text' placeholder='Description'></input><br>
-          <br>
-        <h5>Contact Information</h5>
-          <input name='contactName' type='text' placeholder='Contact Name'></input><br>
-          <input name='email' type='text' placeholder='Email Address'></input><br>
-          <input name='phone' type='text' placeholder='Phone'></input><br>
-          <input name='address' type='text' placeholder='Address'></input><br>
-          <br>
-        <h5>Market</h5>
-          <input name='services' type='text' placeholder='Services (Separate with commas)'></input><br>
-          <input name='market' type='text' placeholder='Market (Separate with commas)'></input><br>
-          <br>
-          <button type='submit'>Submit Form</button>
-      </form>
-    </div>
-
-    <section class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 resource_div">
-      <div class="form-submit">
-          <p onclick="openForm()">Submit Resource </p>
-      </div>
-      <div class="the-list">
-      <ul class="resource-list">
-        {{#resources}}
-          {{#isApproved}}
-              <li class="actual-resource-item" onclick="displayInfo('{{_id}}')">
-                {{businessName}}
-                <br>
-              </li>
-          {{/isApproved}}
-        {{/resources}}
-      </ul>
-    </div>
-    </div>
-    </div>
-    </section>
-
-    <section class="participants-logos">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12 col-sm-8">
-              <h2 class="text-center mt-3">Participants </h2>
-                <div class="logo-container">
-                  <ul class="logo-list d-flex justify-content-around">
-                    <li><img src="./images/station-logo.png" alt="station logo" class="part-logo-img"></li>
-                    <li> <img src="./images/orangeriverlogo.png" alt="orange river advisors logo" class="part-logo-img"></li>
-                    <li><img src="./images/station-logo.png" alt="station logo" class="part-logo-img"></li>
+      <section class="container-fluid">
+         <div class="row">
+            <div class="col-md-12 resource_div">
+               <div class="form-submit">
+                  <p onclick="openForm()">Submit Resource </p>
+               </div>
+               <div class="the-list">
+                  <ul class="resource-list">
+                     {{#resources}}
+                     {{#isApproved}}
+                     <li class="actual-resource-item" vendorName = "Coca Cola" businessName={{businessName}} onclick="displayInfo('{{_id}}')">
+                        {{businessName}}
+                        <br>
+                     </li>
+                     {{/isApproved}}
+                     {{/resources}}
                   </ul>
-                </div>
+               </div>
             </div>
-          </div>
-        </div>
-    </section>
-
-
-
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            subscribe!
-          </div>
-          <div class="col-md-6">
-            <div class="subscribe-section">
-            <p><h2>Subscribe to get the latest news</h2></p><br>
-            <label>Name</label>
-            <input type="text"><br>
-            <label>Email</label>
-            <input type="email"><br><br>
-            <p><button class="subscribe-button"> Susbcribe </button></p>
-          </div>
-          </div>
-        </div>
+         </div>
+      </section>
+      <section class="participants-logos">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12 col-sm-8">
+                  <h2 class="text-center mt-3">Participants </h2>
+                  <div class="logo-container">
+                     <ul class="logo-list d-flex justify-content-around">
+                        <li><img src="./images/station-logo.png" alt="station logo" class="part-logo-img"></li>
+                        <li> <img src="./images/orangeriverlogo.png" alt="orange river advisors logo" class="part-logo-img"></li>
+                        <li><img src="./images/station-logo.png" alt="station logo" class="part-logo-img"></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-6">
+                  subscribe!
+               </div>
+               <div class="col-md-6">
+                  <div class="subscribe-section">
+                     <p>
+                     <h2>Subscribe to get the latest news</h2>
+                     </p><br>
+                     <label>Name</label>
+                     <input type="text"><br>
+                     <label>Email</label>
+                     <input type="email"><br><br>
+                     <p><button class="subscribe-button"> Susbcribe </button></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div id="myModal" class="modal" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content modal-style">
+               <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+               </div>
+            </div>
+         </div>
       </div>
-    </footer>
-
-    </div>
-  </body>
-  <script src="submitForm.js" type="text/javascript"></script>
-  <script>
-    new TypeIt('#typeit', {
-      strings: 'entreprenuers',
-      speed: 50,
-      autoStart: false,
-      loop: true
-    })
-    .pause(1000)
-    .delete()
-    .type('creatives')
-    .pause(1000)
-    .delete()
-    .pause(1000)
-    .type('hustlers');
-  </script>
-
+      </div>
+   </body>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script src="submitForm.js" type="text/javascript"></script>
+   <script>
+      new TypeIt('#typeit', {
+        strings: 'entreprenuers',
+        speed: 50,
+        autoStart: false,
+        loop: true
+      })
+      .pause(1000)
+      .delete()
+      .type('creatives')
+      .pause(1000)
+      .delete()
+      .pause(1000)
+      .type('hustlers');
+   </script>
 </html>

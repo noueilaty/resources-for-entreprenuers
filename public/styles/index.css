@@ -224,3 +224,14 @@ body {
 .google-maps{
   height:700px;
 }
+.modal-list{
+  list-style: none;
+}
+
+.modal-list a {
+  text-decoration: none;
+  color:#00C8B1;
+}
+.modal-style{
+  color:#00043C;
+}
