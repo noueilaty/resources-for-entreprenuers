@@ -18,6 +18,15 @@ a, a:hover {
   margin-right: 20px;
 }
 
+.header-title {
+  font-size: 100px;
+}
+
+.input-field {
+  color: white;
+  width: 200px;
+}
+
 .connect {
   text-align: center;
   padding: 100px 0;
