@@ -7,6 +7,22 @@ a, a:hover {
   color: inherit;
 }
 
+.social-media {
+  list-style: none;
+  font-size: 50px;
+  text-align: center;
+  display: inline-flex;
+}
+
+.social-media li {
+  margin-right: 20px;
+}
+
+.connect {
+  text-align: center;
+  padding: 100px 0;
+}
+
 .hiding-form {
   height: 100%;
   width: 0;
