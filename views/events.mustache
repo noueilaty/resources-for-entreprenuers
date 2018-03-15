@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
   <body class="events-body">
     <nav class="container-fluid events-header">
@@ -22,33 +23,50 @@
       <img src="./images/calendar-fake.png" class="img-fluid">
     </div>
   </div>
-</div>
-<div class="container-fluid google-maps">
-  <div class="row">
-    <div class="col-md-8 offset-2">
-      <div id="googleMap" style="width:400px;height:400px">
+  </div>
+  <div class="container-fluid google-maps">
+    <div class="row">
+      <div class="col-md-8 offset-2">
+        <div id="googleMap" style="width:400px;height:400px">
+      </div>
     </div>
   </div>
 </div>
 
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-          </div>
-          <div class="col-md-6">
-            <div class="subscribe-section">
-            <p><h2>Subscribe to get the latest news</h2></p><br>
-            <label>Name</label>
-            <input type="text"><br>
-            <label>Email</label>
-            <input type="email"><br><br>
-            <p><button class="subscribe-button"> Susbcribe </button></p>
-          </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+<footer class="footer">
+         <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="connect">
+                  <p>
+                    <h2>Connect with us</h2>
+                  </p>
+                  <ul class="social-media">
+                    <li><i class="fab fa-meetup"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-medium-m"></i></li>
+                    <li><i class="fab fa-slack-hash"></i></li>
+                    <li><i class="far fa-envelope"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="subscribe-section">
+                    <p>
+                      <h2>Keep in touch</h2>
+                    </p>
+                    <br>
+                    <label>Name</label>
+                    <input type="text"><br>
+                    <label>Email</label>
+                    <input type="email"><br><br>
+                    <p><button class="subscribe-button"> Susbcribe </button></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
         <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
     <script>
 
