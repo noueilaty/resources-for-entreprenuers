@@ -2,6 +2,11 @@ body {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .hiding-form {
   height: 100%;
   width: 0;
@@ -51,6 +56,7 @@ body {
   list-style: none;
   color:white;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .navigation {
@@ -186,7 +192,7 @@ body {
 }
 
 .participants-logos{
-  background-color: #00C8B1;
+  background-color: #FFF;
   height:300px;
 }
 .participants-logos h2 {
