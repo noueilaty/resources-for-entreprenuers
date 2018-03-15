@@ -84,7 +84,6 @@ a, a:hover {
 
 .top:before,
 .top:after {
-  content: '';
   display: block;
   position: absolute;
   background-image: url("../images/beanie-working.jpg");
@@ -122,6 +121,7 @@ a, a:hover {
   font-size: 60px;
   padding:100px;
   display:flex;
+  height:500px;
 }
 
 .resource-list {
@@ -289,4 +289,11 @@ a, a:hover {
 }
 .modal-style{
   color:#00043C;
+}
+
+.scroll-pic-text{
+  color:#00C8B1;
+  font-size: 100px;
+  text-align: center;
+  padding-top: 220px;
 }
