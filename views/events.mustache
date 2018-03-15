@@ -3,13 +3,20 @@
     <script src="delete.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet"> -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
   <body class="events-body">
     <nav class="container-fluid events-header">
       <div class="row">
         <div class="col-md-12">
+          <div class="navigation-event d-flex justify-content-around">
+             <ul class="nav_menu">
+                <li class="li-item"><a href="/directory">home</a></li>
+                <li class="li-item"><a href="/directory">resources</a></li>
+                <li class="li-item"><a href="/events">events</a></li>
+             </ul>
+          </div>
           <div>
             <p class="events-header-title">EVENTS</p>
           </div>
@@ -19,14 +26,14 @@
 
 <div class="container-fluid google-maps">
   <div class="row">
-    <div class="col-md-8 offset-2">
+    <div class="col-md-6 offset-3">
       <img src="./images/calendar-fake.png" class="img-fluid">
     </div>
   </div>
   </div>
   <div class="container-fluid google-maps">
     <div class="row">
-      <div class="col-md-8 offset-2">
+      <div class="col-md-6 offset-3">
         <div id="googleMap" style="width:400px;height:400px">
       </div>
     </div>
@@ -68,8 +75,8 @@
             </div>
          </div>
       </footer>
-        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-    <script>
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> -->
+    <!-- <script>
 
     function myMap() {
       var myCenter = new google.maps.LatLng(29.752711, -95.3397064);
@@ -84,7 +91,7 @@
       });
       infowindow.open(map,marker);
     }
-    </script>
+    </script> -->
 
   </body>
 
