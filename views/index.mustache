@@ -9,6 +9,7 @@
       <script src="delete.js" type="text/javascript"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.2.0/typeit.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
    </head>
    <body>
       <header class="container-fluid header-container">
@@ -16,7 +17,7 @@
             <div class="col-md-12">
                <div class="row">
                   <div class="col-md-6 left-column header-left">
-                     <p><strong>CreateHTX</strong></p>
+                     <p class=""><strong>CreateHTX</strong></p>
                      <p>The premier resource hub for the</p>
                      <p id="typeit"></p>
                      <p>in HTX.</p>
@@ -115,19 +116,32 @@
       <footer class="footer">
          <div class="container-fluid">
             <div class="row">
-               <div class="col-md-6">
-                  subscribe!
-               </div>
-               <div class="col-md-6">
+              <div class="col-md-6">
+                <div class="connect">
+                  <p>
+                    <h2>Connect with us</h2>
+                  </p>
+                  <ul class="social-media">
+                    <li><i class="fab fa-meetup"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-medium-m"></i></li>
+                    <li><i class="fab fa-slack-hash"></i></li>
+                    <li><i class="far fa-envelope"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
                   <div class="subscribe-section">
-                     <p>
-                     <h2>Subscribe to get the latest news</h2>
-                     </p><br>
-                     <label>Name</label>
-                     <input type="text"><br>
-                     <label>Email</label>
-                     <input type="email"><br><br>
-                     <p><button class="subscribe-button"> Susbcribe </button></p>
+                    <p>
+                      <h2>Keep in touch</h2>
+                    </p>
+                    <br>
+                    <label>Name</label>
+                    <input type="text"><br>
+                    <label>Email</label>
+                    <input type="email"><br><br>
+                    <p><button class="subscribe-button"> Susbcribe </button></p>
                   </div>
                </div>
             </div>
@@ -136,7 +150,7 @@
       <div id="myModal" class="modal" tabindex="-1" role="dialog">
          <div class="modal-dialog" role="document">
             <div class="modal-content modal-style">
-               <div class="modal-header">
+              <div class="modal-header">
                   <h5 class="modal-title">Modal title</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
@@ -146,7 +160,7 @@
                   <p>Modal body text goes here.</p>
                </div>
             </div>
-         </div>
+        </div>
       </div>
       </div>
    </body>
