@@ -10,8 +10,10 @@ const express = require('express'),
   methodOverride = require('method-override'),
   session = require("express-session");
 
+mongoose.connect(
+  "mongodb://admin:admin@ds019766.mlab.com:19766/createhtx"
+);
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/Directory');
 
 app.engine('mustache', mustacheExpress());
 
